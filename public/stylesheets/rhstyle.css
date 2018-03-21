@@ -1,41 +1,28 @@
 /* GENERAL */
-
-* {
-	margin: 0px;
-	padding: 0px;
-}
-
-*[class^="col-"] {
-	padding: 0px;
-}
-
-.row {
-	margin: 0px;
-}
-
-.container-fluid {
-	padding: 0px;
-}
-
-.contents {
-	display: block;
-	border: 8px solid lightgray;
-}
-
-.panel {
-	margin: 0;
-}
-
+*,
+.row,
+.container-fluid,
+*[class^="col-"],
 .panel-body {
-	height: 350px;
-	border: 1px solid red;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/* Contenu principal, aperçu et images */
+.contents .panel-body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 350px;
 }
 
-.images-slide {
-	border: 1px solid yellow;
+.contents .panel-default {
+	border: 8px solid #333;
+	border-radius: 0;
+}
+
+.slider {
 	overflow: none;
 	overflow: scroll;
 	overflow-y: scroll;
@@ -43,11 +30,10 @@
 	height: 300px;
 }
 
-.slider {
+.images-slide {
 	height: 180px;
 	width: 140px;
 	float: left;
-	border: 1px solid blue;
 	text-align: left;
 	position: relative;
 	overflow: hidden;
@@ -55,46 +41,66 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	margin: 5px;
 }
 
-.slider img {
-	width: 100%;
-}
-
-.slider div:nth-child(2) {
-	padding: 2.5px;
-	text-align: center;
-	background-color: aquamarine;
+.images-slide div:nth-child(2) {
 	position: absolute;
 	top: 0;
+	width: 100%;
+	background-color: lightgrey;
+	padding: 2.5px;
+	text-align: center;
 }
 
-.slider div:nth-child(3) {
-	background-color: pink;
+.images-slide div:nth-child(3) {
+	width: 100%;
+	background-color: #888;
 	text-align: center;
 	padding: 2.5px;
 	position: absolute;
 	bottom: 0;
 }
 
-
-tbody tr {
-	border: 1px solid cyan;
+/* TABLEAU */
+table {
 	float: left;
 }
-tbody tr td:first-child{
-	width: 140px;
-	border: 1px solid darkgoldenrod;
+
+thead th {
+	height: 140px;
+	background-color: whitesmoke;
+	padding: 20px;
 }
 
-tbody tr td:last-child{
-	background-color: coral;
+tbody tr td:last-child {
+	background-color: lightgrey;
 	width: 140px;
 	height: 180px;
-	border: 1px solid blue;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	text-align: center;
+}
 
+tbody tr {
+	float: left;
+}
+
+/* FORMULAIRE BUDJET */
+.panneau-budget {
+	margin: 50px auto;
+	width: 70%;
+}
+
+.form {
+	display: flex;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+/* FOOTER */
+.panel-footer {
+	text-align: center;
 }
