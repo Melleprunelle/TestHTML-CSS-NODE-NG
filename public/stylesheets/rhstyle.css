@@ -1,0 +1,100 @@
+/* GENERAL */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+*[class^="col-"] {
+	padding: 0px;
+}
+
+.row {
+	margin: 0px;
+}
+
+.container-fluid {
+	padding: 0px;
+}
+
+.contents {
+	display: block;
+	border: 8px solid lightgray;
+}
+
+.panel {
+	margin: 0;
+}
+
+.panel-body {
+	height: 350px;
+	border: 1px solid red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.images-slide {
+	border: 1px solid yellow;
+	overflow: none;
+	overflow: scroll;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 300px;
+}
+
+.slider {
+	height: 180px;
+	width: 140px;
+	float: left;
+	border: 1px solid blue;
+	text-align: left;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.slider img {
+	width: 100%;
+}
+
+.slider div:nth-child(2) {
+	padding: 2.5px;
+	text-align: center;
+	background-color: aquamarine;
+	position: absolute;
+	top: 0;
+}
+
+.slider div:nth-child(3) {
+	background-color: pink;
+	text-align: center;
+	padding: 2.5px;
+	position: absolute;
+	bottom: 0;
+}
+
+
+tbody tr {
+	border: 1px solid cyan;
+	float: left;
+}
+tbody tr td:first-child{
+	width: 140px;
+	border: 1px solid darkgoldenrod;
+}
+
+tbody tr td:last-child{
+	background-color: coral;
+	width: 140px;
+	height: 180px;
+	border: 1px solid blue;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
