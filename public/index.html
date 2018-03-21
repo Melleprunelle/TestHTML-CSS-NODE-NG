@@ -18,8 +18,9 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.0/ui-bootstrap.min.js"></script>
     <script src="javascripts/rhtest.js"></script>
     <link rel="stylesheet" href="stylesheets/rhstyle.css">
-
 </head>
+
+
 <body ng-controller="rhCtrl">
 <div class="container-fluid">
     <div class="navbar navbar-default" role="navigation">
@@ -46,7 +47,6 @@
             <!--/.nav-collapse -->
         </div>
     </div>
-    <h1 id="erreur">ICI</h1>
     <ng-form name="form" class="form-horizontal css-form" novalidate="true">
         <fieldset>
 
@@ -127,6 +127,7 @@
                                     <tr ng-repeat="image in imageSelection">
                                         <td>
                                             {{image.name}}
+                                            <!-- MON CODE POUR LE RATIO -->
                                             Ratio : {{image.width / image.height | number : 2}}
                                         </td>
                                         <td width="140px">
