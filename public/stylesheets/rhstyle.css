@@ -8,17 +8,16 @@
 	padding: 0px;
 }
 
-
 /* Contenu principal, aperçu et images */
 .contents .panel-body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 350px;
+	height: 400px;
 }
 
 .contents .panel-default {
-	border: 8px solid #333;
+	border: 8px solid whitesmoke;
 	border-radius: 0;
 }
 
@@ -48,14 +47,14 @@
 	position: absolute;
 	top: 0;
 	width: 100%;
-	background-color: lightgrey;
+	background-color: whitesmoke;
 	padding: 2.5px;
 	text-align: center;
 }
 
 .images-slide div:nth-child(3) {
 	width: 100%;
-	background-color: #888;
+	background-color: whitesmoke;
 	text-align: center;
 	padding: 2.5px;
 	position: absolute;
