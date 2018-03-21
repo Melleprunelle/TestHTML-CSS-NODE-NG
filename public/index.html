@@ -127,6 +127,7 @@
                                     <tr ng-repeat="image in imageSelection">
                                         <td>
                                             {{image.name}}
+                                            Ratio : {{image.width / image.height | number : 2}}
                                         </td>
                                         <td width="140px">
                                             <img class="img-responsive" ng-src="images/{{image.name}}"/>
