@@ -20,25 +20,25 @@
 	<script src="javascripts/rhtest.js"></script>
 	<link rel="stylesheet" href="stylesheets/rhstyle.css">
 </head>
+
 <body ng-controller="reponse3">
-	<div class="col-lg-8 contents">
+	<div class="col-lg-12 col-sm-12 contents">
 		<div class="panel panel-default preview">
 			<div class="panel-heading">Images</div>
 			<div class="panel-body">
 				<div class="col-lg-12">
-					<div class="images-slide">
-						<div ng-repeat="x in images" class="slider">
+					<div class="slider">
+						<div ng-repeat="x in images" class="images-slide">
 							<div style="text-align: center">
-								<!-- ICI -->
 								<img class="img-responsive" ng-src="images/{{x.name}}" />
 							</div>
+
 							<div>
 								<span class="glyphicon glyphicon-eye-open" ng-click="previewImage(image)"></span>
 								<span class="glyphicon glyphicon-plus-sign text-success" ng-click="addItem(image)"></span>
 							</div>
 							<div style="padding-bottom: 10px">
-								<!-- ET ICI -->
-								{{x.width}} x {{x.height}} {{x.name}}
+									{{x.width}} x {{x.height}} {{x.name}}
 							</div>
 						</div>
 
@@ -47,8 +47,6 @@
 			</div>
 		</div>
 	</div>
-	</div>
-
 </body>
 
 </html>

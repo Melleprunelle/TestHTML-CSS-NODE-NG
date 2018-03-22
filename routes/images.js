@@ -5,9 +5,8 @@ var router = express.Router();
 var fs = require('fs');
 var sizeOf = require('image-size');
 
-
 /* GET users listing. */
-router.get('/', function(req, res, next) {
+router.get(3000, function(next) {
   var imagePath = path.join(__dirname, '../public/images');
   fs.readdir(imagePath, function(err, files){
     if(err) res.status(400).send({type:"remote", component:"imageController", value:err});
@@ -25,4 +24,21 @@ router.get('/', function(req, res, next) {
   });
 });
 
+var app = express();
+
+app.get('public/javascripts/rhtest.js', function (req, res) {
+   fs.readFile( __dirname + "/" + "users.json", 'utf8', function (err, data) {
+       console.log( data );
+       res.end( data );
+   });
+})
+
+var server = app.listen(8081, function () {
+
+  var host = server.address().address
+  var port = server.address().port
+
+  console.log("Example app listening at http://%s:%s", host, port)
+
+})
 module.exports = router;
